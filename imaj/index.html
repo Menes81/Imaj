@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>City Imaj – Friseur & Barber in Erlensee</title>
+  <meta name="description" content="City Imaj in Erlensee: Herrenhaarschnitte, Fades, Bartpflege und Nassrasur. Rückinger Str. 4, 63526 Erlensee. Jetzt Termin buchen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <!-- Utility-Leiste (wie Boardroom) -->
+  <div class="topbar">
+    <div class="wrap topbar__in">
+      <span id="topbar-status" class="topbar__status"></span>
+      <div class="topbar__links">
+        <a href="#kontakt">Anfahrt</a>
+        <a id="topbar-phone" href="#">Anrufen</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="wrap header__in">
+      <a href="#top" class="logo" aria-label="City Imaj – Startseite">
+        <span class="logo__city">City</span><span class="logo__imaj">IMAJ</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <a href="#erlebnis">Erlebnis</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#team">Team</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a href="#termin" class="btn btn--gold header__cta">Termin buchen</a>
+      <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__in">
+        <p class="eyebrow">Friseur & Barber · Erlensee</p>
+        <h1 class="hero__title">Dein Look.<br><em>Dein Image.</em></h1>
+        <p class="hero__lead">Präzise Schnitte, saubere Fades und Bartpflege mit Zeit fürs Detail, mitten in Erlensee.</p>
+        <div class="hero__ctas">
+          <a href="#termin" class="btn btn--gold">Termin sichern</a>
+          <a href="#leistungen" class="btn btn--ghost">Leistungen & Preise</a>
+        </div>
+        <a class="hero__rating" id="hero-rating" target="_blank" rel="noopener"></a>
+      </div>
+    </section>
+
+    <!-- ERLEBNIS -->
+    <section class="section" id="erlebnis">
+      <div class="wrap">
+        <p class="eyebrow">Das City Imaj Erlebnis</p>
+        <h2 class="h2">Mehr als nur ein Haarschnitt</h2>
+        <div class="features">
+          <article class="feature">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6l20 36M34 6L14 42" /><circle cx="12" cy="40" r="5"/><circle cx="36" cy="40" r="5"/></svg>
+            <h3>Handwerk mit Präzision</h3>
+            <p>Klassische Techniken und moderne Styles: vom Skin Fade bis zum zeitlosen Business-Cut.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 30c0-8 6-14 14-14s14 6 14 14"/><path d="M6 30h36v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/><path d="M24 10v6"/></svg>
+            <h3>Entspannte Atmosphäre</h3>
+            <p>Modern, ruhig und herzlich. Lehn dich zurück, wir kümmern uns um den Rest.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l6 13 14 1.5-10.5 9.5 3 14L24 35l-12.5 7 3-14L4 18.5 18 17z"/></svg>
+            <h3>Top bewertet</h3>
+            <p id="feature-rating">Hunderte zufriedene Kunden aus Erlensee, Hanau und Umgebung.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMIN -->
+    <section class="section section--dark" id="termin">
+      <div class="wrap booking">
+        <div class="booking__intro">
+          <p class="eyebrow">Termin buchen</p>
+          <h2 class="h2">Dein Platz im Stuhl wartet.</h2>
+          <p>Wähl Leistung und Wunschtermin. Wir bestätigen dir den Termin per WhatsApp. Lieber telefonieren? Ruf einfach an.</p>
+          <div class="booking__alt">
+            <a id="booking-phone" class="btn btn--ghost" href="#">Anrufen</a>
+            <a id="booking-external" class="btn btn--gold" href="#" target="_blank" rel="noopener" hidden>Online buchen</a>
+          </div>
+        </div>
+        <form class="booking__form" id="booking-form" novalidate>
+          <div class="field">
+            <label for="f-service">Leistung</label>
+            <select id="f-service" required></select>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date">Datum</label>
+              <input id="f-date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="f-time">Uhrzeit</label>
+              <select id="f-time" required></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-name">Dein Name</label>
+            <input id="f-name" type="text" autocomplete="given-name" required>
+          </div>
+          <p class="field__error" id="f-error" role="alert"></p>
+          <button class="btn btn--gold btn--block" type="submit">Anfrage per WhatsApp senden</button>
+          <p class="field__hint">Die Anfrage öffnet WhatsApp mit einer vorbereiteten Nachricht. Der Termin gilt erst nach unserer Bestätigung.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section class="section" id="leistungen">
+      <div class="wrap">
+        <p class="eyebrow">Leistungen & Preise</p>
+        <h2 class="h2">Unsere Leistungen</h2>
+        <div class="tabs" role="tablist" id="service-tabs"></div>
+        <div id="service-panels"></div>
+      </div>
+    </section>
+
+    <!-- BEWERTUNGEN -->
+    <section class="section section--cream" id="bewertungen">
+      <div class="wrap">
+        <p class="eyebrow">Bewertungen</p>
+        <h2 class="h2">Was unsere Kunden sagen</h2>
+        <div class="reviews__summary" id="reviews-summary"></div>
+        <div class="reviews" id="reviews"></div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="wrap">
+        <p class="eyebrow">Das Team</p>
+        <h2 class="h2">Die Hände hinter dem Look</h2>
+        <div class="team" id="team-grid"></div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="section section--dark" id="galerie">
+      <div class="wrap">
+        <p class="eyebrow">Galerie</p>
+        <h2 class="h2">Frisch aus dem Stuhl</h2>
+        <div class="gallery" id="gallery"></div>
+        <p class="center"><a id="insta-link" class="btn btn--ghost" target="_blank" rel="noopener" hidden>Mehr auf Instagram</a></p>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+      <div class="wrap contact">
+        <div>
+          <p class="eyebrow">Besuch uns</p>
+          <h2 class="h2">Öffnungszeiten & Anfahrt</h2>
+          <address class="contact__addr" id="contact-addr"></address>
+          <table class="hours" id="hours"></table>
+          <p class="contact__a11y">Rollstuhlgerechter Eingang</p>
+        </div>
+        <div class="map" id="map">
+          <div class="map__consent">
+            <p>Mit Klick lädst du die Karte von Google Maps. Dabei werden Daten an Google übertragen.</p>
+            <button class="btn btn--gold" id="map-load" type="button">Karte laden</button>
+            <a id="map-link" target="_blank" rel="noopener">In Google Maps öffnen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <a href="#top" class="logo logo--sm"><span class="logo__city">City</span><span class="logo__imaj">IMAJ</span></a>
+      <p id="footer-addr"></p>
+      <nav class="footer__links" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> City Imaj Friseur Erlensee</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Buchen-Button auf dem Handy -->
+  <a href="#termin" class="mobile-cta btn btn--gold">Termin buchen</a>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
